@@ -155,7 +155,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+App\Providers\MetronicServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -219,6 +219,8 @@ return [
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+		'Metronic' => App\Classes\Theme\Metronic::class,
+'Menu' => App\Classes\Theme\Menu::class,
 
     ],
 
